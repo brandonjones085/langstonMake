@@ -14,3 +14,8 @@ main: ${OBJS} ${HEADERS}
 ${OBJS}:${SRCS}
 	${CXX} ${CXXFLAGS} -c $(@:.o=.cpp)
 
+.PHONY: clean 
+
+clean:
+	-rm ${OBJS} main
+

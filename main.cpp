@@ -115,7 +115,7 @@ int main()
 							startCol = a.moveAntRight(startRow, startCol);
 							b.changeToBlack(startRow, startCol-1);//Changes the space to black
 
-							if (game[startRow][startCol +1] == '.')
+							if (game[startRow][startCol] == '.')
 							{
 								orientation = 3;
 								a.setOrientation(orientation);
